@@ -1,0 +1,37 @@
+# Configuration file for processing AC-S profile data for Cruise PS121.
+# Empty lines and lines start with "#" are overridden.
+# Statements can be in any order.
+
+#-----Make changes according to your situation.-----------------------
+# device file.
+device=acs219_07032019.dev
+
+# QFT-ICAM filter pad ap & LWCC ag data
+qft=/isibhv/projects/Phytooptic/yliu/Data/cruises/qft_icam/PS121/qft_icam_merged_median_abs_totparticle_pangaea.txt
+lwcc=/isibhv/projects/Phytooptic/yliu/Data/cruises/lwcc/PS121/lwcc_merged_median_ag_station_salcorr_smooth_null_final_pangaea_expfit.txt
+
+# TSG data (Pangaea)
+# Files names should be either "*phys_oce.tab" and/or "*phys_oce_extracted.txt".
+# Prepare your own file.
+tsg=PS121_phys_oce_extracted.txt
+
+# list of folders that contain ac-s drift data
+# Fill it in after Step 4.
+dirs_drift=St4a_20190820,St17_20190901
+
+# T-S independency coefficients
+# This file is prepared.
+tscoeff=Sullivan_etal_2006_instrumentspecific.xls 
+
+# labels
+# Prepare your own file.
+matched_labels=MatchStationLabel.txt
+
+# instrument drift
+# This file will be generated in Step 5. In this case, the drift is derived using the "reference depth approach" rather than measured using MilliQ water.
+blanks=acs_derived_drift_final.txt
+
+#remove spectra
+
+
+
